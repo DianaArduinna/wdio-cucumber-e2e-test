@@ -1,3 +1,4 @@
+
 import type { Options } from '@wdio/types'
 
 export const config: Options.Testrunner = {
@@ -18,20 +19,15 @@ export const config: Options.Testrunner = {
     // If you need to configure how ts-node runs please use the
     // environment variables for ts-node or use wdio config's autoCompileOpts section.
     //
-
+    runner: 'local',
     autoCompileOpts: {
-        autoCompile: true,
+       // autoCompile: true,
         // see https://github.com/TypeStrong/ts-node#cli-and-programmatic-options
         // for all available options
         tsNodeOpts: {
-            transpileOnly: true,
-            project: 'tsconfig.json'
+           // transpileOnly: true,
+           project: './tsconfig.json'
         }
-        // tsconfig-paths is only used if "tsConfigPathsOpts" are provided, if you
-        // do please make sure "tsconfig-paths" is installed as dependency
-        // tsConfigPathsOpts: {
-        //     baseUrl: './'
-        // }
     },
     //
     // ==================
@@ -50,7 +46,8 @@ export const config: Options.Testrunner = {
     // will be called from there.
     //
     specs: [
-        './test/features/**/*.feature'
+        `${process.cwd()}/test/features/**/*.feature`
+       // './test/features/**/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -123,7 +120,10 @@ export const config: Options.Testrunner = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl:'http://localhost',
+    //This links are here for study purposes: 
+    // 'https://the-internet.herokuapp.com',
+    //'http://localhost',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -169,6 +169,7 @@ export const config: Options.Testrunner = {
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
         require: ['./test/features/step-definitions/*.ts'],
+        //[`${process.cwd()}/test/features/step-definitions/*.ts`],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
