@@ -10,7 +10,7 @@ Then(/^Inventory page should list (.*)$/, async function (noOfProducts) {
 
 Then(/^Validate all products have valid price$/, async function () {
   //** 1. Get price list */
-  let eleArray = await $$(`.inventory_item_price`);
+  let eleArray = await $$(`.inventory_item_price`); 
   let priceStrArray = [];
   for (let i = 0; i < eleArray.length; i++) {
     let priceStr = await eleArray[i].getText();
