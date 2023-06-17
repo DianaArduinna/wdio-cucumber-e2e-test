@@ -3,7 +3,7 @@ export const config = Object.assign(baseConfig, {
     // All test env specific key val pairs
     environment: "TEST",
     sauseDemoURL: "https://www.saucedemo.com/v1/",
-    reqresBaseURL: "https://reqres.in",
+    reqresBaseURL: "https://reqres.in/",
     nopeCommerceBaseURL: "https://admin-demo.nopcommerce.com",
     sqlConfig: {
         user: process.env.DB_USER,

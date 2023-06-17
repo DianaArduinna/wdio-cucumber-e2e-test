@@ -2,6 +2,7 @@ import { Then } from "@wdio/cucumber-framework";
 import chai from "chai";
 import logger from "../../helper/logger.js";
 import reporter from "../../helper/reporter.js";
+import fs from 'fs';
 
 Then(
   /^Inventory page should (.*)\s?list (.*)$/,
@@ -53,3 +54,27 @@ Then(/^Validate all products have valid price$/, async function () {
   let invalidPriceArr = priceNumArr.filter((ele) => ele <= 0);
   chai.expect(invalidPriceArr.length).to.equal(0);
 });
+
+
+/** E2E */
+
+Then(/^Verify if all users exist in customer list$/, async function () {
+
+  /** 1. Navigate/select Customer options from left menu */
+  //@ts-ignore
+  await browser.url(`${browser.options.nopeCommerceBaseURL}/Admin/Customer/List`);
+  reporter.addStep(this.testid, "info", `Navigate to customer list screen...`);
+
+  /** 2. Read API response from /data folder */
+  let filename = `${process.cwd()}/data/api-res/reqresAPIUsers.json`;
+  let data = fs.readFileSync(filename, "utf8");
+  let dataObj = JSON.parse(data);
+
+  /** 3. For each user object in API response 
+   * - enter firsname and lastname
+   * - search and confirm if user exists
+  */
+
+  /** 4. In case user does not exist write it to error file */
+
+})

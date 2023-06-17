@@ -1,0 +1,177 @@
+
+Execution of 5 workers started at 2023-06-16T23:14:15.339Z
+
+2023-06-16T23:14:15.364Z INFO chromedriver: Initiate Chromedriver Launcher (v8.1.1)
+2023-06-16T23:14:15.365Z INFO @wdio/cli:launcher: Run onPrepare hook
+2023-06-16T23:14:15.366Z INFO chromedriver: Start Chromedriver (/Users/dianajm/Documents/TestAutomation/Webdriverio/wdioBegToAdv/node_modules/chromedriver/lib/chromedriver/chromedriver) with args --port=9515 --url-base=/
+2023-06-16T23:14:15.382Z INFO chromedriver: Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 9515
+2023-06-16T23:14:15.382Z INFO chromedriver: Only local connections are allowed.
+2023-06-16T23:14:15.382Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+2023-06-16T23:14:15.401Z INFO chromedriver: ChromeDriver was started successfully.
+2023-06-16T23:14:15.476Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-06-16T23:14:15.476Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-06-16T23:14:15.476Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-06-16T23:14:15.476Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-06-16T23:14:15.476Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-06-16T23:14:15.477Z INFO @wdio/local-runner: Start worker 0-0 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression=@demo
+2023-06-16T23:14:15.479Z INFO @wdio/local-runner: Start worker 0-1 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression=@demo
+2023-06-16T23:14:15.479Z INFO @wdio/local-runner: Start worker 0-2 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression=@demo
+2023-06-16T23:14:15.480Z INFO @wdio/local-runner: Start worker 0-3 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression=@demo
+2023-06-16T23:14:15.481Z INFO @wdio/local-runner: Start worker 0-4 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression=@demo
+[0-0] 2023-06-16T23:14:16.246Z INFO @wdio/local-runner: Run worker command: run
+[0-2] 2023-06-16T23:14:16.288Z INFO @wdio/local-runner: Run worker command: run
+[0-3] 2023-06-16T23:14:16.315Z INFO @wdio/local-runner: Run worker command: run
+[0-4] 2023-06-16T23:14:16.321Z INFO @wdio/local-runner: Run worker command: run
+[0-1] 2023-06-16T23:14:16.396Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - file:///test/features/commerce/E2ETest.feature
+[0-0] 2023-06-16T23:14:16.767Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2023-06-16T23:14:16.846Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2023-06-16T23:14:16.847Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       browserName: 'chrome',
+[0-0]       'goog:chromeOptions': [Object],
+[0-0]       acceptInsecureCerts: true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     browserName: 'chrome',
+[0-0]     'goog:chromeOptions': { args: [] },
+[0-0]     acceptInsecureCerts: true
+[0-0]   }
+[0-0] }
+2023-06-16T23:14:16.862Z INFO @wdio/cli: [0-2] SKIPPED in chrome - file:///test/features/demo/Inventory.feature
+2023-06-16T23:14:16.862Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-06-16T23:14:16.862Z INFO @wdio/cli: [0-4] SKIPPED in chrome - file:///test/features/demo/demo.feature
+2023-06-16T23:14:16.862Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-06-16T23:14:16.868Z INFO @wdio/cli: [0-3] SKIPPED in chrome - file:///test/features/demo/WebInteractions.feature
+2023-06-16T23:14:16.868Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-06-16T23:14:16.956Z INFO @wdio/cli: [0-1] SKIPPED in chrome - file:///test/features/demo/CucumberDemo.feature
+2023-06-16T23:14:16.956Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+[0-0] [[32mINFO[39m: [E2E_TC001]: Getting the payload data for endpoint: users]
+[0-0] [[32mINFO[39m: [E2E_TC001]: Making a GET to api/users]
+[0-0] {"req":{"method":"GET","url":"https://reqres.in/api/users?pages=2","headers":{"authorization":"Bearer ","content-type":"application/json","accept":"application/json"}},"header":{"date":"Fri, 16 Jun 2023 23:14:19 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","connection":"close","x-powered-by":"Express","access-control-allow-origin":"*","etag":"W/\"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8\"","via":"1.1 vegur","cf-cache-status":"BYPASS","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PKAUa%2FgQwN5AvZM0gJ2mrrpamSiVeZNCjUhwOVX3x5fCLA1xf6Z%2BzL1IQywtbkAsIDAeN7MsqLFyxgFBLTfSrMcsh%2BLYbRsBeucu5VkBHsLjMYnu4yRIQy%2BI0Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","vary":"Accept-Encoding","server":"cloudflare","cf-ray":"7d86bf920b8829fb-SCL","content-encoding":"gzip"},"status":200,"text":"{\"page\":1,\"per_page\":6,\"total\":12,\"total_pages\":2,\"data\":[{\"id\":1,\"email\":\"george.bluth@reqres.in\",\"first_name\":\"George\",\"last_name\":\"Bluth\",\"avatar\":\"https://reqres.in/img/faces/1-image.jpg\"},{\"id\":2,\"email\":\"janet.weaver@reqres.in\",\"first_name\":\"Janet\",\"last_name\":\"Weaver\",\"avatar\":\"https://reqres.in/img/faces/2-image.jpg\"},{\"id\":3,\"email\":\"emma.wong@reqres.in\",\"first_name\":\"Emma\",\"last_name\":\"Wong\",\"avatar\":\"https://reqres.in/img/faces/3-image.jpg\"},{\"id\":4,\"email\":\"eve.holt@reqres.in\",\"first_name\":\"Eve\",\"last_name\":\"Holt\",\"avatar\":\"https://reqres.in/img/faces/4-image.jpg\"},{\"id\":5,\"email\":\"charles.morris@reqres.in\",\"first_name\":\"Charles\",\"last_name\":\"Morris\",\"avatar\":\"https://reqres.in/img/faces/5-image.jpg\"},{\"id\":6,\"email\":\"tracey.ramos@reqres.in\",\"first_name\":\"Tracey\",\"last_name\":\"Ramos\",\"avatar\":\"https://reqres.in/img/faces/6-image.jpg\"}],\"support\":{\"url\":\"https://reqres.in/#support-heading\",\"text\":\"To keep ReqRes free, contributions towards server costs are appreciated!\"}}"}
+[0-0] [[34mDEBUG[39m: [E2E_TC001]: API response received, data: {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]
+[0-0] [[32mINFO[39m: [E2E_TC001]: API response from api/users stored in json file]
+[0-0] [[32mINFO[39m: [E2E_TC001]: Login to nopcommerce demo site... ]
+[0-0] [[32mINFO[39m: [E2E_TC001]: Login to: https://admin-demo.nopcommerce.com with admin@yourstore.com]
+[0-0] 2023-06-16T23:14:18.952Z INFO webdriver: COMMAND navigateTo("https://admin-demo.nopcommerce.com/")
+[0-0] 2023-06-16T23:14:18.953Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/url
+[0-0] 2023-06-16T23:14:18.953Z INFO webdriver: DATA { url: 'https://admin-demo.nopcommerce.com/' }
+[0-0] 2023-06-16T23:14:20.566Z INFO webdriver: RESULT null
+[0-0] 2023-06-16T23:14:20.566Z INFO webdriver: COMMAND findElement("css selector", "#Email")
+[0-0] 2023-06-16T23:14:20.567Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/element
+[0-0] 2023-06-16T23:14:20.567Z INFO webdriver: DATA { using: 'css selector', value: '#Email' }
+[0-0] 2023-06-16T23:14:20.574Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'EA304312406D6F64A728AC5B53A8CD4F_element_2'
+[0-0] }
+[0-0] 2023-06-16T23:14:20.577Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-06-16T23:14:20.577Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/execute/sync
+[0-0] 2023-06-16T23:14:20.577Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [8007 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'EA304312406D6F64A728AC5B53A8CD4F_element_2',
+[0-0]       ELEMENT: 'EA304312406D6F64A728AC5B53A8CD4F_element_2'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-06-16T23:14:20.582Z INFO webdriver: RESULT true
+[0-0] 2023-06-16T23:14:20.582Z INFO webdriver: COMMAND elementClear("EA304312406D6F64A728AC5B53A8CD4F_element_2")
+[0-0] 2023-06-16T23:14:20.582Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/element/EA304312406D6F64A728AC5B53A8CD4F_element_2/clear
+[0-0] 2023-06-16T23:14:20.602Z INFO webdriver: RESULT null
+[0-0] 2023-06-16T23:14:20.602Z INFO webdriver: COMMAND elementSendKeys("EA304312406D6F64A728AC5B53A8CD4F_element_2", "admin@yourstore.com")
+[0-0] 2023-06-16T23:14:20.602Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/element/EA304312406D6F64A728AC5B53A8CD4F_element_2/value
+[0-0] 2023-06-16T23:14:20.602Z INFO webdriver: DATA { text: 'admin@yourstore.com' }
+[0-0] 2023-06-16T23:14:20.694Z INFO webdriver: RESULT null
+[0-0] 2023-06-16T23:14:20.694Z INFO webdriver: COMMAND findElement("css selector", "#Password")
+[0-0] 2023-06-16T23:14:20.695Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/element
+[0-0] 2023-06-16T23:14:20.695Z INFO webdriver: DATA { using: 'css selector', value: '#Password' }
+[0-0] 2023-06-16T23:14:20.701Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'EA304312406D6F64A728AC5B53A8CD4F_element_6'
+[0-0] }
+[0-0] 2023-06-16T23:14:20.702Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-06-16T23:14:20.702Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/execute/sync
+[0-0] 2023-06-16T23:14:20.702Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [8007 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'EA304312406D6F64A728AC5B53A8CD4F_element_6',
+[0-0]       ELEMENT: 'EA304312406D6F64A728AC5B53A8CD4F_element_6'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-06-16T23:14:20.706Z INFO webdriver: RESULT true
+[0-0] 2023-06-16T23:14:20.706Z INFO webdriver: COMMAND elementClear("EA304312406D6F64A728AC5B53A8CD4F_element_6")
+[0-0] 2023-06-16T23:14:20.707Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/element/EA304312406D6F64A728AC5B53A8CD4F_element_6/clear
+[0-0] 2023-06-16T23:14:20.731Z INFO webdriver: RESULT null
+[0-0] 2023-06-16T23:14:20.731Z INFO webdriver: COMMAND elementSendKeys("EA304312406D6F64A728AC5B53A8CD4F_element_6", "admin")
+[0-0] 2023-06-16T23:14:20.731Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/element/EA304312406D6F64A728AC5B53A8CD4F_element_6/value
+[0-0] 2023-06-16T23:14:20.731Z INFO webdriver: DATA { text: 'admin' }
+[0-0] 2023-06-16T23:14:20.753Z INFO webdriver: RESULT null
+[0-0] 2023-06-16T23:14:20.754Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space(text()) = "Log in"] | .//button[not(.//button[normalize-space(text()) = "Log in"]) and normalize-space() = "Log in"]")
+[0-0] 2023-06-16T23:14:20.754Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/element
+[0-0] 2023-06-16T23:14:20.754Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: './/button[normalize-space(text()) = "Log in"] | .//button[not(.//button[normalize-space(text()) = "Log in"]) and normalize-space() = "Log in"]'
+[0-0] }
+[0-0] 2023-06-16T23:14:20.763Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'EA304312406D6F64A728AC5B53A8CD4F_element_3'
+[0-0] }
+[0-0] 2023-06-16T23:14:20.764Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-06-16T23:14:20.764Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/execute/sync
+[0-0] 2023-06-16T23:14:20.764Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [8007 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'EA304312406D6F64A728AC5B53A8CD4F_element_3',
+[0-0]       ELEMENT: 'EA304312406D6F64A728AC5B53A8CD4F_element_3'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-06-16T23:14:20.768Z INFO webdriver: RESULT true
+[0-0] 2023-06-16T23:14:20.768Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-06-16T23:14:20.768Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/execute/sync
+[0-0] 2023-06-16T23:14:20.768Z INFO webdriver: DATA {
+[0-0]   script: 'isElementClickable(...) [5351 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'EA304312406D6F64A728AC5B53A8CD4F_element_3',
+[0-0]       ELEMENT: 'EA304312406D6F64A728AC5B53A8CD4F_element_3'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-06-16T23:14:20.772Z INFO webdriver: RESULT true
+[0-0] 2023-06-16T23:14:20.772Z INFO webdriver: COMMAND elementClick("EA304312406D6F64A728AC5B53A8CD4F_element_3")
+[0-0] 2023-06-16T23:14:20.772Z INFO webdriver: [POST] http://localhost:9515/session/a79749564020dba29d770c582727305a/element/EA304312406D6F64A728AC5B53A8CD4F_element_3/click
+[0-0] 2023-06-16T23:14:23.253Z INFO webdriver: RESULT null
+[0-0] [[32mINFO[39m: [E2E_TC001]: Login to: https://admin-demo.nopcommerce.com with admin@yourstore.com is successful]
+[0-0] 2023-06-16T23:14:23.258Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2023-06-16T23:14:23.258Z INFO webdriver: [DELETE] http://localhost:9515/session/a79749564020dba29d770c582727305a
+[0-0] 2023-06-16T23:14:23.316Z INFO webdriver: RESULT null
+[0-0] PASSED in chrome - file:///test/features/commerce/E2ETest.feature
+2023-06-16T23:14:23.428Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-06-16T23:14:23.428Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 114.0.5735.133 mac os x #0-0] Running: chrome (v114.0.5735.133) on mac os x
+[chrome 114.0.5735.133 mac os x #0-0] Session ID: a79749564020dba29d770c582727305a
+[chrome 114.0.5735.133 mac os x #0-0]
+[chrome 114.0.5735.133 mac os x #0-0] » /test/features/commerce/E2ETest.feature
+[chrome 114.0.5735.133 mac os x #0-0] Inventory
+[chrome 114.0.5735.133 mac os x #0-0] E2E_TC001: Search external customers
+[chrome 114.0.5735.133 mac os x #0-0]    ✓ Given Get list of users from reqres.in
+[chrome 114.0.5735.133 mac os x #0-0]    ✓ When An as Admin user login to nopcommerce site
+[chrome 114.0.5735.133 mac os x #0-0]    ✓ When Search users in customer list
+[chrome 114.0.5735.133 mac os x #0-0]    ✓ Then Verify if all users exist in customer list
+[chrome 114.0.5735.133 mac os x #0-0]
+[chrome 114.0.5735.133 mac os x #0-0] 4 passing (5.3s)
+
+
+Spec Files:	 1 passed, 4 skipped, 5 total (100% completed) in 00:00:08 
+
+2023-06-16T23:14:23.429Z INFO @wdio/local-runner: Shutting down spawned worker
+2023-06-16T23:14:23.681Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2023-06-16T23:14:23.681Z INFO @wdio/local-runner: shutting down
