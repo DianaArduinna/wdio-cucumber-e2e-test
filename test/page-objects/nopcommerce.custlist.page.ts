@@ -8,8 +8,8 @@ class CustList extends Page {
   }
 
   /** Page Objects */
-  get firstNameInputBox() { return $(`#SearchFirstName`);}
-  get lastNameInputBox() { return $(`#SearchLastName`);}
+  get firstNameInputBox() { return $(`#SearchFirstName`) }
+  get lastNameInputBox() { return $(`#SearchLastName`) }
   get searchBtn() { return $(`#search-customers`);}
   get noResultMessage() { return $(`td=No data available in table`); }
 
@@ -24,7 +24,7 @@ class CustList extends Page {
       await this.typeInto(await this.firstNameInputBox, firstname);
       await this.typeInto(await this.lastNameInputBox, lastname);
       await this.click(await this.searchBtn);
-      browser.pause(1000);
+      await browser.pause(1000);
       let isNotDisplayed = await this.noResultMessage.isDisplayed();
       if (isNotDisplayed) nameNotExist = true;
     } catch (error) {
