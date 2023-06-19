@@ -8,4 +8,4 @@ Feature: Demo feature
 
         Examples:
             | TestID     | SearchItem | ExpectedURL           |
-            | DEMO_TC001 | WDIO       | https://webdriver.io/es/ |
+            | DEMO_TC001 | WDIO      | https://webdriver.io/es/ |
